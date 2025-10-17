@@ -24,14 +24,14 @@
  Access denied
 """
 
-user = admin
-password = "12345password"
+username = input("Enter your username: ")
 
-if "admin" in user:
-    password
-    if password == "12345password":
-        print("access granted")
-    else:
-        print("access denied")
+if username != "admin":
+ print("invalid user.")
 else:
-    print("invalid user")
+ password = input("Enter your password: ")
+
+if password == "12345password":
+ print("Access granted")
+else:
+ print("incorrect password")
