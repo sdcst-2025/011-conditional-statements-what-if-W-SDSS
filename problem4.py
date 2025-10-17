@@ -33,3 +33,28 @@ that is an obtuse triangle
 
 
 """
+a = float(input("Enter side a: "))
+b = float(input("Enter side b: "))
+c = float(input("Enter side c: "))
+
+if a > b and a > c:
+  hyp = a
+  side1 = b
+  side2 = c
+elif b > a and b > c:
+  hyp = b
+  side1 = a
+  side2 = c
+else:
+  hyp = c
+  side1 = a
+  side2 = b
+
+actual = hyp**2
+calculated = side1**2 + side2**2
+percent = abs(actual - calculated) / actual*100
+
+if percent < 2:
+  print("that is a right triangle")
+else:
+  print("that is an obtuse triangle")
