@@ -30,9 +30,9 @@ the equation can not be factored
 
 """
 
-a = float(input("Enter a: ")
-b = float(input("Enter b: ")
-c = float(input("Enter c: ")
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
 
 D = b**2 - 4*a*c
 

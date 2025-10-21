@@ -27,11 +27,11 @@
 username = input("Enter your username: ")
 
 if username != "admin":
- print("invalid user.")
+ print("invalid user")
 else:
  password = input("Enter your password: ")
 
 if password == "12345password":
  print("Access granted")
 else:
- print("incorrect password")
+ print("Access denied")

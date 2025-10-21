@@ -52,9 +52,11 @@ else:
 
 actual = hyp**2
 calculated = side1**2 + side2**2
-percent = abs(actual - calculated) / actual*100
+percent = (actual - calculated) / actual*100
 
-if percent < 2:
+if 0 <= percent <= 2:
   print("that is a right triangle")
+elif percent <= 0:
+  print("that is an acute triangle")
 else:
   print("that is an obtuse triangle")
